@@ -1,0 +1,741 @@
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude"sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+tset.c(10): warning:  #223-D: function "LED_Init" declared implicitly
+tset.c:         LED_Init();
+tset.c:         ^
+tset.c(12): error:  #20: identifier "LED0" is undefined
+tset.c:         LED0=0;
+tset.c:         ^
+tset.c(22): warning:  #223-D: function "deley_ms" declared implicitly
+tset.c:                                         deley_ms(100);
+tset.c:                                         ^
+tset.c(25): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(28): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(29): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(29): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(31): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(33): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(38): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 4 warnings, 8 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude"sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+..\HARDWARE\KEY\key.h(13): error:  #20: identifier "u8" is undefined
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:   ^
+..\HARDWARE\KEY\key.h(13): error:  #92: identifier-list parameters may only be used in a function definition
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:      ^
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PAin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                      ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PEin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                               ^
+..\HARDWARE\KEY\key.c(28): error:  #20: identifier "KEY3" is undefined
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                                                 ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 4 warnings, 9 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude"sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+tset.c(23): warning:  #223-D: function "deley_ms" declared implicitly
+tset.c:                                         deley_ms(100);
+tset.c:                                         ^
+tset.c(26): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 3 warnings, 7 errors
+compiling key.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude"sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+..\HARDWARE\KEY\key.h(13): error:  #20: identifier "u8" is undefined
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:   ^
+..\HARDWARE\KEY\key.h(13): error:  #92: identifier-list parameters may only be used in a function definition
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:      ^
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PAin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                      ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PEin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                               ^
+..\HARDWARE\KEY\key.c(28): error:  #20: identifier "KEY3" is undefined
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                                                 ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 4 warnings, 9 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude "sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+tset.c(23): warning:  #223-D: function "deley_ms" declared implicitly
+tset.c:                                         deley_ms(100);
+tset.c:                                         ^
+tset.c(26): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 3 warnings, 7 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.h(3): error:  #11-D: unrecognized preprocessing directive
+..\HARDWARE\KEY\key.h:   # incude "sys.h"
+..\HARDWARE\KEY\key.h:     ^
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+..\HARDWARE\KEY\key.h(13): error:  #20: identifier "u8" is undefined
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:   ^
+..\HARDWARE\KEY\key.h(13): error:  #92: identifier-list parameters may only be used in a function definition
+..\HARDWARE\KEY\key.h:   u8 KEY_Scan(u8);
+..\HARDWARE\KEY\key.h:      ^
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PAin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                      ^
+..\HARDWARE\KEY\key.c(28): warning:  #223-D: function "PEin" declared implicitly
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                               ^
+..\HARDWARE\KEY\key.c(28): error:  #20: identifier "KEY3" is undefined
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                                                 ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 4 warnings, 9 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+tset.c(23): warning:  #223-D: function "deley_ms" declared implicitly
+tset.c:                                         deley_ms(100);
+tset.c:                                         ^
+tset.c(26): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 3 warnings, 6 errors
+compiling key.c...
+..\HARDWARE\KEY\key.h(7): warning:  #47-D: incompatible redefinition of macro "KEY0" (declared at line 4)
+..\HARDWARE\KEY\key.h:   # define KEY0 PAin(0)//
+..\HARDWARE\KEY\key.h:            ^
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(28): error:  #20: identifier "KEY3" is undefined
+..\HARDWARE\KEY\key.c:          if(key_up&&(KEY0==0||KEY1==0||KEY2==0||KEY3==1))
+..\HARDWARE\KEY\key.c:                                                 ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 2 warnings, 6 errors
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+tset.c(23): warning:  #223-D: function "deley_ms" declared implicitly
+tset.c:                                         deley_ms(100);
+tset.c:                                         ^
+tset.c(26): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 2 warnings, 6 errors
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+tset.c(26): error:  #20: identifier "KEY_LEFT" is undefined
+tset.c:                                 case KEY_LEFT:
+tset.c:                                      ^
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 1 warning, 6 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+tset.c(29): error:  #53: expected a ":"
+tset.c:                                 case KEY_DOWN;
+tset.c:                                              ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(32): warning:  #12-D: parsing restarts here after previous syntax error
+tset.c:                                 case KEY_RIGHT:
+tset.c:                                               ^
+tset.c(34): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1;
+tset.c:                                         ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 1 warning, 5 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+tset.c(30): error:  #20: identifier "LED1" is undefined
+tset.c:                                         LED1=!LED1；
+tset.c:                                         ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #65: expected a ";"
+tset.c:                                         LED1=!LED1；
+tset.c:                                                   ^
+tset.c(30): error:  #7: unrecognized token
+tset.c:                                         LED1=!LED1；
+tset.c:                                                    ^
+tset.c(39): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 0 warnings, 5 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+tset.c(32): error:  #7: unrecognized token
+tset.c:                                         LED0=!LED0;；
+tset.c:                                                    ^
+tset.c(32): error:  #29: expected an expression
+tset.c:                                         LED0=!LED0;；
+tset.c:                                                    ^
+tset.c(32): error:  #7: unrecognized token
+tset.c:                                         LED0=!LED0;；
+tset.c:                                                     ^
+tset.c(42): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 0 warnings, 4 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+tset.c(42): error:  #65: expected a ";"
+tset.c:         }
+tset.c:         ^
+tset.c: tset.c: 0 warnings, 1 error
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(12): error:  #136: struct "<unnamed>" has no field "ORD"
+..\HARDWARE\KEY\key.c:          GPIOE->ORD|=7<<2;//上拉模式
+..\HARDWARE\KEY\key.c:                 ^
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 5 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:                  KEY_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 4 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+Target not created
+Build target 'Target 1'
+compiling key.c...
+..\HARDWARE\KEY\key.c(25): error:  #40: expected an identifier
+..\HARDWARE\KEY\key.c:          static u8 key_up=1;//按键松开标志
+..\HARDWARE\KEY\key.c:                    ^
+..\HARDWARE\KEY\key.c(27): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=1;//支持连按
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(31): error:  #137: expression must be a modifiable lvalue
+..\HARDWARE\KEY\key.c:                  key_up=0;
+..\HARDWARE\KEY\key.c:                  ^
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 4 errors
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(37): error:  #20: identifier "KEY_up" is undefined
+..\HARDWARE\KEY\key.c:          else if (KEY0==1&&KEY1==1&&KEY2==1&&KEY3==0) KEY_up=1;
+..\HARDWARE\KEY\key.c:                                                       ^
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 1 error
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+..\HARDWARE\KEY\key.c(39): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\KEY\key.c:   }
+..\HARDWARE\KEY\key.c:    ^
+..\HARDWARE\KEY\key.c: ..\HARDWARE\KEY\key.c: 1 warning, 0 errors
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling key.c...
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling tset.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling key.c...
+compiling led.c...
+..\HARDWARE\LED\led.c(10): warning:  #1-D: last line of file ends without a newline
+..\HARDWARE\LED\led.c:   }
+..\HARDWARE\LED\led.c:    ^
+..\HARDWARE\LED\led.c: ..\HARDWARE\LED\led.c: 1 warning, 0 errors
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling led.c...
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling tset.c...
+linking...
+..\OBJ\test.axf: Error: L6218E: Undefined symbol KEY_Init (referred from tset.o).
+..\OBJ\test.axf: Not enough information to list image symbols.
+..\OBJ\test.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'Target 1'
+compiling key.c...
+linking...
+Program Size: Code=3480 RO-data=336 RW-data=8 ZI-data=1632  
+FromELF: creating hex file...
+"..\OBJ\test.axf" - 0 Error(s), 0 Warning(s).

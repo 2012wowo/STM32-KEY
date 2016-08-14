@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\sys -I..\SYSTEM\delay -I..\SYSTEM\usart -I..\HARDWARE\KEY -I..\HARDWARE\LED -I "d:\Keil\ARM\INC" -I "d:\Keil\ARM\INC\ST\STM32F10x" -o "..\OBJ\led.o" --omf_browse "..\OBJ\led.crf" --depend "..\OBJ\led.d" "..\HARDWARE\LED\led.c"
